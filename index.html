@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Barrionuevo — Full Stack Developer</title>
+  <meta name="description" content="Portafolio de Santiago Barrionuevo, Full Stack Developer de Córdoba, Argentina.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header id="hdr">
+    <a href="#inicio" class="logo">
+      <span class="logo-bracket">[</span>SB<span class="logo-bracket">]</span>
+    </a>
+    <nav>
+      <a href="#sobre" data-nav>sobre</a>
+      <a href="#educacion" data-nav>educación</a>
+      <a href="#proyectos" data-nav>proyectos</a>
+      <a href="#contacto" data-nav>contacto</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-icon">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          <span>disponible · córdoba, argentina</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line serif-line"><em>hola, soy</em></span>
+          <span class="title-line name-line">Santiago</span>
+          <span class="title-line accent-line" id="scrambleTarget">Barrionuevo</span>
+        </h1>
+
+        <p class="hero-role">
+          <span class="role-num">— </span>Full Stack Developer
+        </p>
+
+        <p class="hero-desc">
+          Construyo aplicaciones web completas. Del modelo de datos a la interfaz de usuario.
+          Código limpio, UI que importa.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">
+            <span>Ver proyectos</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="assets/Santiago Barrionuevo.pdf" class="btn btn-ghost" download>
+            <span>Descargar CV</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card" id="codeCard">
+          <div class="code-card-header">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="code-file">dev.js</span>
+          </div>
+          <pre class="code-body"><code><span class="c-kw">const</span> <span class="c-var">dev</span> <span class="c-op">=</span> {
+  <span class="c-key">nombre</span><span class="c-op">:</span> <span class="c-str">"Santiago"</span>,
+  <span class="c-key">stack</span><span class="c-op">:</span> [
+    <span class="c-str">"React"</span><span class="c-op">,</span>
+    <span class="c-str">"Node.js"</span><span class="c-op">,</span>
+    <span class="c-str">"PostgreSQL"</span>
+  ]<span class="c-op">,</span>
+  <span class="c-key">disponible</span><span class="c-op">:</span> <span class="c-bool">true</span><span class="c-op">,</span>
+  <span class="c-key">cafe</span><span class="c-op">:</span> <span class="c-str">"siempre"</span>
+}<span class="c-op">;</span></code></pre>
+        </div>
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="sec-inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">01 /</span>
+          <h2>sobre mí</h2>
+        </div>
+
+        <div class="sobre-grid">
+
+          
+          <div class="sobre-photo-col reveal">
+            <div class="sobre-photo-wrap">
+              <img src="/assets/Foto de Perfil.png" alt="Santiago Barrionuevo" class="sobre-photo">
+              <div class="sobre-photo-frame"></div>
+              <div class="sobre-photo-tag">
+                <span class="pulse-dot"></span>
+                <span>disponible para trabajar</span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="sobre-right reveal">
+            <div class="sobre-text">
+              <p>
+                Desarrollador Full Stack. Construyo aplicaciones web completas — desde el diseño de la base de datos hasta la experiencia de usuario.
+              </p>
+              <p>
+                Elegí aprender construyendo. Completé formación en <strong>Coderhouse</strong> y estoy cursando la <strong>Tecnicatura en Programación Full Stack</strong> en la Universidad Provincial de Córdoba.
+              </p>
+              <p>
+                Busco mi <mark>primer rol como desarrollador</mark> en un equipo donde pueda aportar desde el primer día.
+              </p>
+            </div>
+
+            <div class="skills-col">
+              <div class="skill-group">
+                <p class="sg-label">Frontend</p>
+                <div class="pills">
+                  <span class="pill active">JavaScript</span>
+                  <span class="pill active">React</span>
+                  <span class="pill">HTML</span>
+                  <span class="pill">CSS</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <p class="sg-label">Backend &amp; DB</p>
+                <div class="pills">
+                  <span class="pill active">PostgreSQL</span>
+                  <span class="pill">Node.js</span>
+                  <span class="pill">SQL</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <p class="sg-label">Herramientas</p>
+                <div class="pills">
+                  <span class="pill">Git</span>
+                  <span class="pill">GitHub</span>
+                  <span class="pill">VS Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="educacion" class="sec-alt">
+      <div class="sec-inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">02 /</span>
+          <h2>educación</h2>
+        </div>
+
+        <div class="edu-list">
+
+          <div class="edu-item reveal">
+            <div class="edu-timeline">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-body">
+              <div class="edu-meta">
+                <span class="edu-year">2026 — actualidad</span>
+                <span class="edu-badge">En curso</span>
+              </div>
+              <h3 class="edu-title">Tecnicatura en Programación Full Stack</h3>
+              <p class="edu-place">Universidad Provincial de Córdoba</p>
+              <p class="edu-desc">Formación universitaria en desarrollo web fullstack con énfasis en arquitectura de software, bases de datos relacionales y diseño de APIs REST.</p>
+              <div class="edu-tags">
+                <span class="etag">Algoritmos</span>
+                <span class="etag">Bases de datos</span>
+                <span class="etag">POO</span>
+                <span class="etag">APIs REST</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-item reveal">
+            <div class="edu-timeline">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-body">
+              <div class="edu-meta">
+                <span class="edu-year">2023</span>
+                <span class="edu-badge completed">Completado</span>
+              </div>
+              <h3 class="edu-title">Desarrollo Frontend React</h3>
+              <p class="edu-place">Coderhouse</p>
+              <p class="edu-desc">Completé el Bootcamp de Frontend Development con React en CoderHouse, donde aprendí a desarrollar interfaces web modernas e interactivas. Adquirí conocimientos en React, JavaScript, HTML y CSS, creando proyectos prácticos y aplicando buenas prácticas de desarrollo frontend.</p>
+              <div class="edu-tags">
+                <span class="etag">HTML</span>
+                <span class="etag">CSS</span>
+                <span class="etag">JavaScript</span>
+                <span class="etag">React</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="proyectos">
+      <div class="sec-inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">03 /</span>
+          <h2>proyectos</h2>
+        </div>
+
+        <div class="proj-carousel reveal">
+          <div class="proj-track" id="projTrack">
+
+            
+            <article class="proj-slide" data-index="001">
+              <div class="proj-slide-bg budgetlog-bg"></div>
+              <div class="proj-slide-overlay"></div>
+              <div class="proj-slide-content">
+                <div class="proj-slide-top">
+                  <div class="proj-slide-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+                  </div>
+                  <div class="proj-slide-links">
+                    <a href="https://budget-log-eight.vercel.app/" class="plink plink-live" target="_blank" title="Ver sitio">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <a href="https://github.com/Santiaago-Barrionuevo/budgetlog" class="plink" target="_blank" title="GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="proj-slide-body">
+                  <span class="proj-slide-num">001</span>
+                  <h3 class="proj-slide-name">BudgetLog</h3>
+                  <p class="proj-slide-desc">Gestor de finanzas personales. Registrá y categorizá gastos, visualizá tu presupuesto con gráficos interactivos y mantené el control con datos persistentes.</p>
+                  <div class="proj-slide-stack">
+                    <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>CSS</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="proj-slide" data-index="002">
+              <div class="proj-slide-bg ecommerce-bg"></div>
+              <div class="proj-slide-overlay"></div>
+              <div class="proj-slide-content">
+                <div class="proj-slide-top">
+                  <div class="proj-slide-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  </div>
+                  <div class="proj-slide-links">
+                    <a href="https://kovaarg.netlify.app/" class="plink plink-live" target="_blank" title="Ver sitio">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <a href="https://github.com/Santiaago-Barrionuevo/Ecommerce" class="plink" target="_blank" title="GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="proj-slide-body">
+                  <span class="proj-slide-num">002</span>
+                  <h3 class="proj-slide-name">KovaArg — Ecommerce</h3>
+                  <p class="proj-slide-desc">Tienda online completa con catálogo de productos, carrito de compras y flujo de checkout. Diseño moderno y experiencia de usuario optimizada.</p>
+                  <div class="proj-slide-stack">
+                    <span>React</span><span>JavaScript</span><span>CSS</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="proj-slide" data-index="003">
+              <div class="proj-slide-bg cinescope-bg"></div>
+              <div class="proj-slide-overlay"></div>
+              <div class="proj-slide-content">
+                <div class="proj-slide-top">
+                  <div class="proj-slide-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+                  </div>
+                  <div class="proj-slide-links">
+                    <a href="https://cinescopeargg.netlify.app/" class="plink plink-live" target="_blank" title="Ver sitio">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <a href="https://github.com/Santiaago-Barrionuevo/CineScope" class="plink" target="_blank" title="GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="proj-slide-body">
+                  <span class="proj-slide-num">003</span>
+                  <h3 class="proj-slide-name">CineScope</h3>
+                  <p class="proj-slide-desc">Buscador de películas y series con integración a API externa. Explorá, filtrá y descubrí contenido con una interfaz fluida y responsive.</p>
+                  <div class="proj-slide-stack">
+                    <span>React</span><span>API REST</span><span>JavaScript</span><span>CSS</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="proj-slide" data-index="004">
+              <div class="proj-slide-bg landing-bg"></div>
+              <div class="proj-slide-overlay"></div>
+              <div class="proj-slide-content">
+                <div class="proj-slide-top">
+                  <div class="proj-slide-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  </div>
+                  <div class="proj-slide-links">
+                    <a href="https://nomadeargg.netlify.app/" class="plink plink-live" target="_blank" title="Ver sitio">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <a href="https://github.com/Santiaago-Barrionuevo/Primera-Web" class="plink" target="_blank" title="GitHub">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="proj-slide-body">
+                  <span class="proj-slide-num">004</span>
+                  <h3 class="proj-slide-name">Nomade — Landing Page</h3>
+                  <p class="proj-slide-desc">Landing page profesional con diseño moderno, secciones de hero, servicios y contacto. Optimizada para conversión y totalmente responsive.</p>
+                  <div class="proj-slide-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="proj-controls">
+            <button class="proj-arrow" id="projPrev" aria-label="Anterior">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <div class="proj-dots" id="projDots"></div>
+            <button class="proj-arrow" id="projNext" aria-label="Siguiente">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contacto" class="sec-alt">
+      <div class="sec-inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">04 /</span>
+          <h2>contacto</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <p class="contact-headline">
+              ¿Tenés una<br><em class="serif-em">propuesta?</em>
+            </p>
+            <p class="contact-sub">Estoy en búsqueda de mi primer rol como desarrollador. Si tenés un proyecto o una oportunidad, escribime.</p>
+            <ul class="clinks">
+              <li><a href="mailto:sanntiago.dev@gmail.com" class="cl"><span>sanntiago.dev@gmail.com</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+              <li><a href="https://github.com/Santiaago-Barrionuevo" class="cl" target="_blank"><span>GitHub</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+              <li><a href="https://linkedin.com/in/santiagonb" class="cl" target="_blank"><span>LinkedIn</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+            </ul>
+          </div>
+
+          <div class="contact-right reveal">
+            <form id="cform" class="cform" action="https://formspree.io/f/mzdqkbqg" method="POST">
+              <div class="fg">
+                <label for="fn">nombre</label>
+                <input type="text" id="fn" name="name" required placeholder="Tu nombre" autocomplete="off">
+              </div>
+              <div class="fg">
+                <label for="fe">email</label>
+                <input type="email" id="fe" name="email" required placeholder="tu@correo.com" autocomplete="off">
+              </div>
+              <div class="fg">
+                <label for="fm">mensaje</label>
+                <textarea id="fm" name="message" rows="5" required placeholder="Contame sobre tu propuesta..."></textarea>
+              </div>
+              <div class="form-foot">
+                <button type="submit" class="btn btn-primary">
+                  <span>Enviar mensaje</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <p id="fstatus" class="form-status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="foot-copy">© 2026 Santiago Barrionuevo</p>
+    <p class="foot-built">todos los derechos reservados</p>
+    <div class="foot-links">
+      <a href="https://www.instagram.com/sanntibarrionuevo_" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
