@@ -1,12 +1,3 @@
-/* ═══════════════════════════════════════════════
-   main.js — Santiago Barrionuevo Portfolio
-═══════════════════════════════════════════════ */
-
-
-/* ──────────────────────────────────────────────
-   HEADER SCROLL
-────────────────────────────────────────────── */
-
 (function initHeader() {
   const hdr = document.getElementById('hdr');
   if (!hdr) return;
@@ -16,9 +7,6 @@
 })();
 
 
-/* ──────────────────────────────────────────────
-   TEXT SCRAMBLE
-────────────────────────────────────────────── */
 
 class TextScramble {
   constructor(el) {
@@ -108,9 +96,7 @@ class TextScramble {
 })();
 
 
-/* ──────────────────────────────────────────────
-   SCROLL REVEAL
-────────────────────────────────────────────── */
+
 
 (function initReveal() {
   const observer = new IntersectionObserver((entries) => {
@@ -129,9 +115,6 @@ class TextScramble {
 })();
 
 
-/* ──────────────────────────────────────────────
-   THEME TOGGLE
-────────────────────────────────────────────── */
 
 (function initTheme() {
   const btn  = document.getElementById('themeToggle');
@@ -151,9 +134,7 @@ class TextScramble {
 })();
 
 
-/* ──────────────────────────────────────────────
-   CARRUSEL DE PROYECTOS
-────────────────────────────────────────────── */
+
 
 (function initCarousel() {
   const track    = document.getElementById('projTrack');
@@ -167,7 +148,7 @@ class TextScramble {
   const total  = slides.length;
   let current  = 0;
 
-  // Crear dots
+ 
   slides.forEach((_, i) => {
     const dot = document.createElement('button');
     dot.className = 'proj-dot' + (i === 0 ? ' active' : '');
@@ -199,7 +180,7 @@ class TextScramble {
     if (current < total - 1) goTo(current + 1);
   });
 
-  // Swipe touch para mobile
+  
   let touchStartX = 0;
 
   track.addEventListener('touchstart', (e) => {
@@ -214,7 +195,7 @@ class TextScramble {
     }
   }, { passive: true });
 
-  // Teclado (izquierda/derecha cuando el carrusel está en foco)
+ 
   document.addEventListener('keydown', (e) => {
     const carousel = document.querySelector('.proj-carousel');
     if (!carousel) return;
@@ -226,14 +207,12 @@ class TextScramble {
     if (e.key === 'ArrowRight' && current < total - 1) goTo(current + 1);
   });
 
-  // Init
+
   updateControls();
 })();
 
 
-/* ──────────────────────────────────────────────
-   FORMULARIO DE CONTACTO
-────────────────────────────────────────────── */
+
 
 (function initForm() {
   const form   = document.getElementById('cform');
@@ -268,9 +247,7 @@ class TextScramble {
 })();
 
 
-/* ──────────────────────────────────────────────
-   NAV ACTIVE STATE
-────────────────────────────────────────────── */
+
 
 (function initNavActive() {
   const sections = document.querySelectorAll('section[id]');
