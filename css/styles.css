@@ -1,7 +1,3 @@
-/* ═══════════════════════════════════════════════
-   VARIABLES & RESET
-═══════════════════════════════════════════════ */
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -65,9 +61,7 @@ a { color: inherit; text-decoration: none; }
 ::-webkit-scrollbar-thumb { background: var(--border2); }
 
 
-/* ═══════════════════════════════════════════════
-   HEADER
-═══════════════════════════════════════════════ */
+
 
 header {
   position: fixed;
@@ -155,9 +149,7 @@ nav a:hover::after { width: 100%; }
 [data-theme="light"] .icon-sun  { display: none; }
 
 
-/* ═══════════════════════════════════════════════
-   SECTIONS — shared
-═══════════════════════════════════════════════ */
+
 
 section { padding: 6rem 0; }
 
@@ -192,9 +184,7 @@ section { padding: 6rem 0; }
 }
 
 
-/* ═══════════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════════ */
+
 
 .hero {
   min-height: 100vh;
@@ -290,7 +280,7 @@ section { padding: 6rem 0; }
   animation: fadeUp 0.6s forwards 0.62s;
 }
 
-/* Buttons */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -314,7 +304,7 @@ section { padding: 6rem 0; }
 .btn-ghost { background: transparent; color: var(--muted2); border-color: var(--border2); }
 .btn-ghost:hover { border-color: var(--muted2); color: var(--text); }
 
-/* Code card */
+
 .hero-visual {
   position: relative;
   display: flex;
@@ -390,9 +380,7 @@ section { padding: 6rem 0; }
 }
 
 
-/* ═══════════════════════════════════════════════
-   SOBRE MÍ
-═══════════════════════════════════════════════ */
+
 
 .sobre-grid {
   display: grid;
@@ -450,9 +438,7 @@ section { padding: 6rem 0; }
 }
 
 
-/* ═══════════════════════════════════════════════
-   EDUCACIÓN
-═══════════════════════════════════════════════ */
+
 
 .edu-list { display: flex; flex-direction: column; }
 
@@ -557,9 +543,7 @@ section { padding: 6rem 0; }
 .etag:hover { color: var(--muted2); border-color: var(--border2); }
 
 
-/* ═══════════════════════════════════════════════
-   PROYECTOS — CARRUSEL
-═══════════════════════════════════════════════ */
+
 
 .proj-carousel {
   position: relative;
@@ -573,7 +557,7 @@ section { padding: 6rem 0; }
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Slide */
+
 .proj-slide {
   position: relative;
   min-width: 100%;
@@ -584,9 +568,8 @@ section { padding: 6rem 0; }
   justify-content: flex-end;
 }
 
-/* Fondos por proyecto — reemplazá con imágenes reales:
-   .budgetlog-bg { background-image: url('assets/img/budgetlog.png'); }
-*/
+
+
 .proj-slide-bg {
   position: absolute;
   inset: 0;
@@ -599,7 +582,7 @@ section { padding: 6rem 0; }
   transform: scale(1.03);
 }
 
-/* Gradientes de placeholder */
+
 .budgetlog-bg {
   background:
     linear-gradient(135deg, #0a1628 0%, #0c2a3e 40%, #0a1a2e 70%, #061020 100%);
@@ -623,7 +606,7 @@ section { padding: 6rem 0; }
     linear-gradient(135deg, #130b1a 0%, #1e1030 40%, #120b1a 70%, #0a0610 100%);
 }
 
-/* Overlay gradiente sobre la imagen/fondo */
+
 .proj-slide-overlay {
   position: absolute;
   inset: 0;
@@ -635,7 +618,7 @@ section { padding: 6rem 0; }
   );
 }
 
-/* Contenido encima */
+
 .proj-slide-content {
   position: relative;
   z-index: 2;
@@ -750,7 +733,7 @@ section { padding: 6rem 0; }
   padding: 2px 9px;
 }
 
-/* Controles del carrusel */
+
 .proj-controls {
   display: flex;
   align-items: center;
@@ -816,9 +799,6 @@ section { padding: 6rem 0; }
 }
 
 
-/* ═══════════════════════════════════════════════
-   CONTACTO
-═══════════════════════════════════════════════ */
 
 .contact-grid {
   display: grid;
@@ -870,7 +850,7 @@ section { padding: 6rem 0; }
 .cl:hover { color: var(--cyan); padding-left: 0.5rem; }
 .cl:hover svg { opacity: 1; transform: translateX(0); }
 
-/* Form */
+
 .cform { display: flex; flex-direction: column; gap: 1.25rem; }
 
 .fg { display: flex; flex-direction: column; gap: 6px; }
@@ -916,9 +896,7 @@ section { padding: 6rem 0; }
 }
 
 
-/* ═══════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════ */
+
 
 footer {
   border-top: 1px solid var(--border);
@@ -949,9 +927,7 @@ footer p {
 .foot-links a:hover { color: var(--cyan); }
 
 
-/* ═══════════════════════════════════════════════
-   REVEAL
-═══════════════════════════════════════════════ */
+
 
 .reveal {
   opacity: 0;
@@ -962,9 +938,7 @@ footer p {
 .reveal.visible { opacity: 1; transform: none; }
 
 
-/* ═══════════════════════════════════════════════
-   KEYFRAMES
-═══════════════════════════════════════════════ */
+
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(18px); }
@@ -982,9 +956,7 @@ footer p {
 }
 
 
-/* ═══════════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════════ */
+
 
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; padding-top: 7rem; }
@@ -1007,9 +979,7 @@ footer p {
 }
 
 
-/* ═══════════════════════════════════════════════
-   SOBRE MÍ — CON FOTO
-═══════════════════════════════════════════════ */
+
 
 .sobre-grid {
   display: grid;
@@ -1018,7 +988,7 @@ footer p {
   align-items: start;
 }
 
-/* Columna foto */
+
 .sobre-photo-col {
   display: flex;
   justify-content: center;
@@ -1047,7 +1017,7 @@ footer p {
   filter: grayscale(0%) contrast(1.0);
 }
 
-/* Marco decorativo desplazado */
+
 .sobre-photo-frame {
   position: absolute;
   inset: 0;
@@ -1064,7 +1034,7 @@ footer p {
   transform: translate(6px, 6px);
 }
 
-/* Tag "disponible" flotante */
+
 .sobre-photo-tag {
   position: absolute;
   bottom: -14px;
@@ -1086,7 +1056,7 @@ footer p {
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* Columna derecha (texto + skills) */
+
 .sobre-right {
   display: flex;
   flex-direction: column;
@@ -1110,7 +1080,7 @@ footer p {
   padding: 1px 4px;
 }
 
-/* Responsive foto */
+
 @media (max-width: 860px) {
   .sobre-grid {
     grid-template-columns: 1fr;
@@ -1127,9 +1097,6 @@ footer p {
 }
 
 
-/* ═══════════════════════════════════════════════
-   FONDOS NUEVOS PROYECTOS
-═══════════════════════════════════════════════ */
 
 .ecommerce-bg {
   background-image:
